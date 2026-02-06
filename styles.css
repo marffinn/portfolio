@@ -612,6 +612,14 @@ body {
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
 }
 
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
 /* ===================================
    RESPONSIVE
    =================================== */
