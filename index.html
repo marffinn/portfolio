@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="pl"> <!-- zmieniłem na pl, bo kontakt i wcześniejszy post po polsku -->
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomasz Drozdowski – Full-Stack Developer & 3D</title>
+    <title>Tomasz Drozdowski – Full-Stack Developer</title>
     <meta name="description"
-        content="Tomasz Drozdowski – Full-Stack Developer. Strony internetowe, aplikacje custom, grafika, modelowanie 3D. React, Node.js, Tauri, JavaScript i więcej.">
+        content="Tomasz Drozdowski – Full-Stack Developer. Strony www, aplikacje desktopowe, React, Electron, C#, PHP, modelowanie 3D.">
     <link rel="stylesheet" href="styles.css">
-    <!-- Polecam dodać favicon i ewentualnie Google Fonts -->
 </head>
 
 <body>
-    <!-- Mała karta / wizytówka -->
+
+    <!-- Wizytówka / karta początkowa -->
     <div class="card-wrapper" id="cardWrapper">
         <div class="card" id="card">
             <div class="card-content">
                 <div class="avatar">
                     <div class="avatar-initials">TD</div>
-                    <!-- Tu możesz wstawić prawdziwe zdjęcie: <img src="twoje-zdjecie.jpg" alt="Tomasz Drozdowski"> -->
                 </div>
                 <h1 class="card-name">Tomasz Drozdowski</h1>
-                <p class="card-title">Full-Stack Developer & Creative Coder</p>
+                <p class="card-title">Full-Stack Developer & Desktop Apps</p>
 
                 <div class="card-contact">
                     <a href="mailto:marffinn@gmail.com" class="contact-link">
@@ -32,13 +31,15 @@
                     </a>
                 </div>
 
+                <!-- Zaktualizowana, bardziej zwięzła sekcja umiejętności -->
                 <div class="card-skills">
-                    <span class="skill-tag">HTML/CSS/JS</span>
+                    <span class="skill-tag">HTML / CSS</span>
+                    <span class="skill-tag">JavaScript</span>
                     <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">3D / glTF</span>
-                    <span class="skill-tag">Tauri</span>
-                    <!-- Dodaj więcej z Twojego doświadczenia, np. C#, PHP, Figma -->
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Electron</span>
                 </div>
 
                 <button class="expand-btn" id="expandBtn">Zobacz pełną stronę</button>
@@ -46,8 +47,9 @@
         </div>
     </div>
 
-    <!-- Rozwinięta strona -->
+    <!-- Pełna strona po rozwinięciu -->
     <div class="website-container" id="websiteContainer">
+
         <nav class="navbar" id="navbar">
             <div class="nav-content">
                 <div class="logo">TD</div>
@@ -71,11 +73,10 @@
             <div class="section-content">
                 <div class="hero">
                     <h1 class="hero-title">Cześć, jestem Tomasz</h1>
-                    <p class="hero-subtitle">Full-Stack Developer & Twórca rozwiązań 3D</p>
+                    <p class="hero-subtitle">Full-Stack & Desktop Developer</p>
                     <p class="hero-description">
-                        Tworzę nowoczesne strony, aplikacje webowe i desktopowe, automatyzacje, integracje oraz
-                        wizualizacje 3D.
-                        React, Node.js, Tauri, JavaScript, C#, glTF i wiele więcej.
+                        Tworzę nowoczesne strony internetowe, aplikacje desktopowe (Electron), narzędzia webowe,
+                        automatyzacje i wizualizacje 3D.
                     </p>
                     <button class="cta-btn" onclick="scrollToSection('contact')">Napisz do mnie</button>
                 </div>
@@ -88,17 +89,20 @@
                 <div class="about-grid">
                     <div class="about-card">
                         <h3>Doświadczenie</h3>
-                        <p>Wieloletnie doświadczenie w web & desktop dev (JS/TS, React, Node, Tauri, C#). Tworzę zarówno
-                            frontend, backend, jak i narzędzia 3D.</p>
+                        <p>Tworzę aplikacje webowe i desktopowe od wielu lat. Od prostych stron po zaawansowane
+                            narzędzia z React, Electron, C# i C++.</p>
                     </div>
                     <div class="about-card">
                         <h3>Technologie</h3>
-                        <p>HTML • CSS • JavaScript/TypeScript • React • Node.js • Tauri • C# • PHP • 3D (glTF/Three.js)
-                            • Figma</p>
+                        <p>
+                            HTML • CSS • JavaScript • React<br>
+                            PHP • C# • C++ • Electron
+                        </p>
                     </div>
                     <div class="about-card">
                         <h3>Pasja</h3>
-                        <p>Czysty kod, wydajne rozwiązania, automatyzacja i ładna grafika/3D – to moja codzienność.</p>
+                        <p>Czysty kod, wydajne aplikacje desktopowe, nowoczesne interfejsy i automatyzacja procesów – to
+                            moja codzienność.</p>
                     </div>
                 </div>
             </div>
@@ -108,25 +112,22 @@
             <div class="section-content">
                 <h2 class="section-title">Wybrane projekty</h2>
                 <div class="portfolio-grid">
-                    <!-- Tu warto wstawić prawdziwe projekty z linkami -->
+                    <!-- Możesz tu wstawić prawdziwe projekty -->
                     <div class="portfolio-item">
-                        <a href="https://marffinn.github.io/convertly" target="_blank" rel="noopener">
-                            <div class="portfolio-image">Convertly</div>
-                            <h3>Convertly – Konwerter obrazów online</h3>
-                            <p>React + WebAssembly-like podejście do konwersji PNG/JPEG/WebP/AVIF</p>
-                        </a>
+                        <div class="portfolio-image">Projekt 1</div>
+                        <h3>Aplikacja desktopowa (Electron)</h3>
+                        <p>Cross-platform narzędzie z React frontendem i Node.js/Electron backendem.</p>
                     </div>
                     <div class="portfolio-item">
                         <div class="portfolio-image">Projekt 2</div>
-                        <h3>Aplikacja desktopowa (Tauri)</h3>
-                        <p>Przykład lekkiej apki desktopowej z Rust/WebView lub C# integracją</p>
+                        <h3>System webowy + integracje</h3>
+                        <p>Panel administracyjny z React + PHP / C# backend.</p>
                     </div>
                     <div class="portfolio-item">
-                        <div class="portfolio-image">3D Viewer</div>
-                        <h3>glTF / 3D Viewer</h3>
-                        <p>Interaktywny podgląd modeli 3D w przeglądarce (Three.js / custom viewer)</p>
+                        <div class="portfolio-image">Projekt 3</div>
+                        <h3>Konwerter / narzędzie 3D</h3>
+                        <p>Webowa lub desktopowa aplikacja do przetwarzania plików / modeli 3D.</p>
                     </div>
-                    <!-- Dodaj więcej realnych projektów z GitHuba -->
                 </div>
             </div>
         </section>
@@ -138,17 +139,17 @@
                     <div class="service-card">
                         <div class="service-icon">🌐</div>
                         <h3>Strony i sklepy internetowe</h3>
-                        <p>Landing page, wizytówki, sklepy, portfolio – szybkie, responsywne, SEO-friendly</p>
+                        <p>Responsywne, szybkie, SEO-friendly – React, PHP lub statyczne rozwiązania.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🖥️</div>
+                        <h3>Aplikacje desktopowe</h3>
+                        <p>Electron, C# – cross-platform narzędzia i programy firmowe.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🛠️</div>
-                        <h3>Aplikacje custom & automatyzacje</h3>
-                        <p>Systemy webowe, panele CRM/ERP, integracje API, narzędzia firmowe</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🧊</div>
-                        <h3>Modelowanie i grafika 3D</h3>
-                        <p>Wizualizacje produktów, obiekty 3D, grafika do stron i reklam</p>
+                        <h3>Custom development & automatyzacje</h3>
+                        <p>Integracje API, panele CRM/ERP, skrypty i narzędzia na zamówienie.</p>
                     </div>
                 </div>
             </div>
@@ -171,6 +172,7 @@
             <p>© 2026 Tomasz Drozdowski. Wszelkie prawa zastrzeżone.</p>
             <p><a href="https://github.com/marffinn" target="_blank">GitHub</a> • marffinn@gmail.com</p>
         </footer>
+
     </div>
 
     <script src="script.js"></script>
