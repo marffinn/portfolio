@@ -1,31 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('#mobile-menu');
+
+    // 1. MOBILE MENU
+    const menuToggle = document.querySelector('#mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
-    // Toggle Mobile Menu
-    menu.addEventListener('click', () => {
+    menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-
-        // Optional: Animate hamburger to X
-        menu.classList.toggle('is-active');
+        menuToggle.classList.toggle('is-active');
     });
 
-    // Close menu when a link is clicked
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-
-    // Scroll Reveal Logic
+    // 2. SCROLL REVEAL ANIMATION
     const revealElements = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+                // Add a small delay for staggered effect
+                setTimeout(() => {
+                    entry.target.classList.add('active');
+                }, index * 100);
             }
         });
     }, { threshold: 0.1 });
 
-    revealElements.forEach(el => observer.observe(el));
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 3. SMOOTH NAVIGATION
+    document.querySelectorAll('.nav-links a, .btn').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    navLinks.classList.remove('active');
+                    document.querySelector('.parallax-wrapper').scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
 });

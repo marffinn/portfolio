@@ -16,7 +16,6 @@
         <div class="container nav-container">
             <a href="#" class="logo">TD<span>.</span></a>
 
-            <!-- NEW: Hamburger Menu Icon -->
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -26,54 +25,109 @@
             <ul class="nav-links">
                 <li><a href="#about">O mnie</a></li>
                 <li><a href="#portfolio">Projekty</a></li>
-                <li><a href="#services">Usługi</a></li>
                 <li><a href="#contact" class="nav-btn">Kontakt</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="parallax-wrapper">
+        <!-- HERO -->
         <section class="hero">
             <div class="parallax-bg"></div>
             <div class="hero-content">
-                <p class="hero-tagline">Full-Stack & Desktop Developer</p>
+                <p class="hero-tagline">Full-Stack & 3D Enthusiast</p>
                 <h1>Tomasz <span>Drozdowski</span></h1>
-                <p class="hero-desc">Tworzę nowoczesne aplikacje webowe i desktopowe z pasją do czystego kodu.</p>
-                <div class="hero-btns">
-                    <a href="#portfolio" class="btn primary">Zobacz Projekty</a>
-                </div>
+                <p class="hero-desc">Tworzę nowoczesne narzędzia desktopowe oraz interaktywne aplikacje webowe.</p>
+                <a href="#portfolio" class="btn primary">Zobacz moją pracę</a>
             </div>
         </section>
 
         <div class="main-content">
+            <!-- ABOUT -->
             <section id="about" class="container section">
                 <div class="reveal">
                     <h2 class="section-title">O mnie</h2>
                     <div class="about-grid">
-                        <div class="about-text">
-                            <h3>Rozwiązuję problemy za pomocą kodu</h3>
-                            <p>Specjalizuję się w budowaniu kompleksowych rozwiązań: React, Node.js, C#, oraz Electron.
-                            </p>
+                        <p>Specjalizuję się w <strong>React, C#, oraz technologiach 3D</strong>. Skupiam się na
+                            wydajności i czystym interfejsie użytkownika.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PORTFOLIO -->
+            <section id="portfolio" class="container section">
+                <h2 class="section-title reveal">Wybrane Projekty</h2>
+
+                <div class="grid-layout">
+                    <!-- Project 1: Convertly -->
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=800&auto=format&fit=crop"
+                                alt="Convertly">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">React / Utility</span>
+                            <h3>Convertly</h3>
+                            <p>Szybki konwerter obrazów wspierający formaty WebP i AVIF.</p>
+                            <a href="https://github.com/marffinn/convertly" target="_blank" class="link">Kod GitHub
+                                →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: SOCDANKA -->
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop"
+                                alt="SOCDANKA">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">C# / Gaming</span>
+                            <h3>SOCDANKA</h3>
+                            <p>Narzędzie do optymalizacji wejść klawiatury dla graczy profesjonalnych.</p>
+                            <a href="https://github.com/marffinn/SOCDANKA" target="_blank" class="link">Kod GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Chair Configurator -->
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=800&auto=format&fit=crop"
+                                alt="3D Configurator">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">Three.js / 3D</span>
+                            <h3>Chair Configurator</h3>
+                            <p>Wizualizacja mebli 3D z możliwością zmiany materiałów w czasie rzeczywistym.</p>
+                            <a href="https://github.com/marffinn/chair-configurator" target="_blank" class="link">Kod
+                                GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: GLTF Viewer -->
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop"
+                                alt="GLTF Viewer">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">JavaScript / Graphics</span>
+                            <h3>sf-gltf-viewer</h3>
+                            <p>Lekka i wydajna przeglądarka plików 3D GLTF bezpośrednio w przeglądarce.</p>
+                            <a href="https://github.com/marffinn/sf-gltf-viewer" target="_blank" class="link">Kod GitHub
+                                →</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="portfolio" class="container section">
-                <h2 class="section-title">Wybrane Projekty</h2>
-                <div class="grid-layout">
-                    <div class="card reveal">
-                        <span class="category">Desktop App</span>
-                        <h3>Custom Tool System</h3>
-                        <p>Aplikacja desktopowa zbudowana w Electronie.</p>
-                    </div>
-                    <div class="card reveal">
-                        <span class="category">Web Platform</span>
-                        <h3>Dashboard</h3>
-                        <p>Panel administracyjny w React.</p>
-                    </div>
+            <!-- CONTACT -->
+            <footer id="contact" class="container section">
+                <div class="footer-box reveal">
+                    <h2>Napisz do mnie</h2>
+                    <p>Chętnie podejmę nowe wyzwania technologiczne.</p>
+                    <a href="mailto:marffinn@gmail.com" class="email-btn">marffinn@gmail.com</a>
                 </div>
-            </section>
+            </footer>
         </div>
     </main>
 
