@@ -1,169 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomasz Drozdowski - Full Stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Tomasz Drozdowski | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Card Container -->
-    <div class="card-wrapper" id="cardWrapper">
-        <div class="card" id="card">
-            <!-- Card Content -->
-            <div class="card-content">
-                <div class="avatar">
-                    <div class="avatar-initials">TD</div>
-                </div>
-                <h1 class="card-name">Tomasz Drozdowski</h1>
-                <p class="card-title">Full-Stack Developer</p>
-                
-                <div class="card-contact">
-                    <a href="mailto:marffinn@gmail.com" class="contact-link">
-                        <span>✉</span> marffinn@gmail.com
-                    </a>
-                    <a href="tel:+48536114381" class="contact-link">
-                        <span>✆</span> +48 536 114 381
-                    </a>
-                </div>
 
-                <div class="card-skills">
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                </div>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">TD<span>.</span></a>
 
-                <button class="expand-btn" id="expandBtn">View Details</button>
+            <!-- NEW: Hamburger Menu Icon -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#portfolio">Projekty</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#contact" class="nav-btn">Kontakt</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
-    <!-- Expanded Website -->
-    <div class="website-container" id="websiteContainer">
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
-            <div class="nav-content">
-                <div class="logo">TD</div>
-                <button class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
-                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
-                    <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
-                    <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
-                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
-                </ul>
-                <button class="close-btn" id="closeBtn">✕</button>
-            </div>
-        </nav>
-
-        <!-- Home Section -->
-        <section class="section" id="home">
-            <div class="section-content">
-                <div class="hero">
-                    <h1 class="hero-title">Hi, I'm Tomasz</h1>
-                    <p class="hero-subtitle">Full-Stack Developer & Creative Problem Solver</p>
-                    <p class="hero-description">
-                        I build beautiful, functional web experiences using modern technologies. 
-                        Specialized in JavaScript, React, and responsive design.
-                    </p>
-                    <button class="cta-btn" onclick="scrollToSection('contact')">Get In Touch</button>
+    <main class="parallax-wrapper">
+        <section class="hero">
+            <div class="parallax-bg"></div>
+            <div class="hero-content">
+                <p class="hero-tagline">Full-Stack & Desktop Developer</p>
+                <h1>Tomasz <span>Drozdowski</span></h1>
+                <p class="hero-desc">Tworzę nowoczesne aplikacje webowe i desktopowe z pasją do czystego kodu.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn primary">Zobacz Projekty</a>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="section" id="about">
-            <div class="section-content">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-grid">
-                    <div class="about-card">
-                        <h3>Experience</h3>
-                        <p>With 5+ years of experience in web development, I've worked on projects ranging from small startups to large enterprises.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Skills</h3>
-                        <p>Proficient in HTML, CSS, JavaScript, React, Node.js, and various modern frameworks and tools.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Passion</h3>
-                        <p>I'm passionate about creating user-friendly interfaces and writing clean, maintainable code.</p>
+        <div class="main-content">
+            <section id="about" class="container section">
+                <div class="reveal">
+                    <h2 class="section-title">O mnie</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h3>Rozwiązuję problemy za pomocą kodu</h3>
+                            <p>Specjalizuję się w budowaniu kompleksowych rozwiązań: React, Node.js, C#, oraz Electron.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Portfolio Section -->
-        <section class="section" id="portfolio">
-            <div class="section-content">
-                <h2 class="section-title">Portfolio</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">Project 1</div>
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with React frontend and Node.js backend.</p>
+            <section id="portfolio" class="container section">
+                <h2 class="section-title">Wybrane Projekty</h2>
+                <div class="grid-layout">
+                    <div class="card reveal">
+                        <span class="category">Desktop App</span>
+                        <h3>Custom Tool System</h3>
+                        <p>Aplikacja desktopowa zbudowana w Electronie.</p>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">Project 2</div>
-                        <h3>Task Management App</h3>
-                        <p>Real-time task management application with collaborative features.</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">Project 3</div>
-                        <h3>Portfolio Website</h3>
-                        <p>Modern, responsive portfolio website showcasing design and development skills.</p>
+                    <div class="card reveal">
+                        <span class="category">Web Platform</span>
+                        <h3>Dashboard</h3>
+                        <p>Panel administracyjny w React.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="section" id="services">
-            <div class="section-content">
-                <h2 class="section-title">Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🎨</div>
-                        <h3>Web Design</h3>
-                        <p>Creating beautiful, user-centered designs that convert.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">💻</div>
-                        <h3>Development</h3>
-                        <p>Building fast, scalable, and maintainable web applications.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">📱</div>
-                        <h3>Responsive Design</h3>
-                        <p>Ensuring your site looks perfect on all devices and screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="section" id="contact">
-            <div class="section-content">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-info">
-                    <p class="contact-text">I'd love to hear from you. Feel free to reach out!</p>
-                    <div class="contact-links">
-                        <a href="mailto:marffinn@gmail.com" class="contact-btn">Email Me</a>
-                        <a href="tel:+48536114381" class="contact-btn">Call Me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2026 Tomasz Drozdowski. All rights reserved.</p>
-        </footer>
-    </div>
+            </section>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
